@@ -1,0 +1,195 @@
+@font-face{
+    font-family: "Product Sans";
+    src: url("./assets/googlesans.woff2");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    font-family: "Product Sans";
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(16,16,16);
+    background-image: url("./assets/background.webp");
+    background-position: top;
+    background-size: 117%;
+    background-repeat: no-repeat;
+}
+
+.qr_section {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    /* background-color: red; */
+}
+.qr_section .sec1 {
+    height: 60%;
+    width: 100%;
+}
+.qr_section .section {
+    text-align: center;
+    color: rgb(58, 58, 58);
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.qr_section .section p {
+    margin-bottom: 10px;
+}
+
+.qr_section .section img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.qr_section .section img:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: red; */
+    padding: 10px;
+    height: 500px;
+}
+
+.container p {
+    font-family: "Product Sans", sans-serif;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.container .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .login input {
+    padding: 18px;
+    background-color: rgb(29, 29, 29);
+    width: 350px;
+    color: white;
+    outline: none;
+    border: 0.01rem solid transparent;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.container .login input:hover {
+    border: 0.01rem solid gray;
+}
+
+.container .login button {
+    padding: 18px;
+    width: 350px;
+    outline: none;
+    border: none;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.619);
+    cursor: pointer;
+}
+
+.container .login .forgot {
+    margin-top: 10px;
+    color: gray;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.container .login .or {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1rem;
+    
+}
+
+.container .login .or p{
+    color: gray;
+    margin: 0 10px;
+}
+
+.container .login .or::before, .container .login .or::after{
+    content: "";
+    width: 40%;
+    height: 0.01rem;
+    background-color: rgb(58, 58, 58);
+}
+
+.container .login .insta {
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    width: 100%;
+    border: 1px solid rgb(58, 58, 58);
+    padding: 20px;
+}
+
+.container .login .insta img {
+    margin: 0 10px; 
+    width: 40px;
+    height: 40px;
+}
+
+.container .login .insta p {
+    margin: 0;
+    color: white;
+    font-size: 1.03rem;
+    font-weight: bold;
+}
+.container .login .insta .nxt {
+    height: 10px;
+    width: 10px;
+    border-right: 3px solid rgb(58, 58, 58);
+    border-top: 3px solid rgb(58, 58, 58);
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 100%;
+    }
+    body{
+        background-image: none;
+    }
+    .qr_section {
+        display: none;
+    }
+    
+}
